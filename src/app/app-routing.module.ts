@@ -8,6 +8,13 @@ const routes: Routes = [
     loadChildren: () => import('./maps/maps.module').then( m => m.MapsModule ),
   },
   {
+    path: 'alone',
+    // Un componente es como un módulo
+    // Carga perezosa
+    loadComponent: () => import('./alone/pages/alone-page/alone-page.component')
+    .then( m => m.AlonePageComponent ),
+  },
+  {
     path: '**',
     redirectTo: 'maps',
   }

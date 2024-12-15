@@ -3,6 +3,7 @@ import { Map } from 'maplibre-gl';
 // import 'maplibre-gl/dist/maplibre-gl.css';
 
 @Component({
+  // standalone: true,
   templateUrl: './full-screen-page.component.html',
   styleUrl: './full-screen-page.component.css'
 })
